@@ -56,7 +56,18 @@ public class HelloWorld {
         // 11 Try to create a variable named class. What happens?
         // String class; the error 'not a statement' is displayed
 
-        // 12
+        // 12 Object is the most generic type in Java. You can assign any value to a variable of type Object. What do you think will happen when the following code is run?
+        // I am not sure what is going to happen. But from the looks of it I think some sort of error will happen.
+//        String theNumberThree = "three";
+//        Object o = theNumberThree;
+//        int three = (int) o;
+        // the result with the error came. but the display is far from my understanding.
+        //Exception in thread "main" java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+        //	at HelloWorld.main(HelloWorld.java:63)
+
+//        int three = (int) "three"; java: incompatible types: java.lang.String cannot be converted to int
+
+        //
 
 
     }
