@@ -4,14 +4,14 @@ public class SyntaxLecture {
 
         // Statements may be...
         // Declarations
-        int x;
+        //int x;
         // Assignment expressions
-        x = 3;
+        //x = 3;
         // Any use of ++ or --
-        x++;
-        --x;
+        //x++;
+        //--x;
         // Method invocations
-        Math.random();
+        //Math.random();
         // Object creation expressions
         //SomeObject someObject = new SomeObject();
         // ================== COMMENTS
@@ -65,7 +65,7 @@ public class SyntaxLecture {
 
 
         // declaration and initialization
-        int age =12;
+        //int age =12;
 
 
         // ================== IDENTIFIERS AND KEYWORDS
@@ -76,7 +76,7 @@ public class SyntaxLecture {
         // ================== CONSTANTS
 
         // see curriculum
-        final int SIDES_OF_A_DICE = 6;
+        //final int SIDES_OF_A_DICE = 6;
 
         // ================== EXPRESSIONS
 
@@ -99,7 +99,7 @@ public class SyntaxLecture {
 
 
         // IMPLICIT
-        SHORT Y = 3;
+        //SHORT Y = 3;
 
         // EXPLICIT
 
