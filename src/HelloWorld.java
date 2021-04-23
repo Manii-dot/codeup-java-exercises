@@ -40,5 +40,18 @@ public class HelloWorld {
         //9 Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
         //float myNumber = 3.14;    there is an error that happened when trying to get it to work.
         double myNumber = 3.14;     // assigning the double as the declaration is the fix for the number range.
+
+        // 10
+//        int x = 5;
+//        System.out.println(x++);
+//        System.out.println(x);
+
+//        int x = 5;
+//        System.out.println(++x);
+//        System.out.println(x);
+
+        //What is the difference between the above code blocks? Explain why the code outputs what it does.
+        // it seems like when assigning the +1 after the value it doesnt do nothing, and then printing it out the second time displayed the increment portion of the value. The second code block has the increment assign to the value at the biginning therefore executed then.
+
     }
 }
