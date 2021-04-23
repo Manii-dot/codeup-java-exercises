@@ -39,7 +39,7 @@ public class HelloWorld {
 
         //9 Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
         //float myNumber = 3.14;    there is an error that happened when trying to get it to work.
-        double myNumber = 3.14;     // assigning the double as the declaration is the fix for the number range.
+        double myNumber = 3.14F;     // assigning the double as the declaration is the fix for the number range.
 
         // 10
 //        int x = 5;
@@ -85,11 +85,14 @@ public class HelloWorld {
         System.out.println(y);
 
 
+
         //14 What happens if you assign a value to a numerical variable that is larger (or smaller) than the type can hold? What happens if you increment a numeric variable past the type's capacity?
         //
         //Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type.
 
 // An error would still happen saying something along the way that it is not being assigned to the right variable component.
-
+        int z = Integer.MAX_VALUE;
+        z+=1;
+        System.out.println("z= "+ z);
     }
 }
