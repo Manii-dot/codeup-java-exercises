@@ -53,5 +53,11 @@ public class HelloWorld {
         //What is the difference between the above code blocks? Explain why the code outputs what it does.
         // it seems like when assigning the +1 after the value it doesnt do nothing, and then printing it out the second time displayed the increment portion of the value. The second code block has the increment assign to the value at the biginning therefore executed then.
 
+        // 11 Try to create a variable named class. What happens?
+        // String class; the error 'not a statement' is displayed
+
+        // 12
+
+
     }
 }
