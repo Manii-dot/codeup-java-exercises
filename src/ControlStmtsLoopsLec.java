@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ControlStmtsLoopsLec {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //Boolean Expressions
         //An expression that evaluates to a boolean value (5 == 5 //t, 5 < 6 //t, 5 > 6 //f)
         //These relational operators will have similarities to our JavaScript work - however: no truth-y, or false-y (no === vs ==, <== vs <=, etc.)
@@ -99,7 +99,7 @@ public class ControlStmtsLoopsLec {
         System.out.println("diceroll = " + diceRoll);
 
 
-        switch(diceRoll){
+        switch (diceRoll) {
             case 1:
                 System.out.println("Rolled a one!");
                 break;
@@ -130,11 +130,11 @@ public class ControlStmtsLoopsLec {
         boolean newsLetterSignUp = true;
         Scanner scanner = new Scanner(System.in);
 
-        while (newsLetterSignUp){
+        while (newsLetterSignUp) {
             System.out.println("Are you ready to sign up for our newsletter? Note: only 'yes' will work :)");
             String userInput = scanner.nextLine();
 
-            if(userInput.equalsIgnoreCase("yes")){
+            if (userInput.equalsIgnoreCase("yes")) {
                 System.out.println("We are so happy to hear you are interested in our newsletter! Thank you for signing up!");
                 newsLetterSignUp = false;
             } else {
@@ -194,16 +194,16 @@ public class ControlStmtsLoopsLec {
             //Continue:
             //Goal: Skipping odd nums, print even nums!
 
-            for(int i = 1; i <=10; i++){
-                if(i % 2 == 1){
+            for (int i = 1; i <= 10; i++) {
+                if (i % 2 == 1) {
                     System.out.println("Odd number - get outta here!");
                     continue;
                 }
                 System.out.println("Here's a nice even number " + i);
             }
 
-            for(int i = 1; i <= 10; i++) { // <--+
-                if(i % 2 == 1) { //              ^
+            for (int i = 1; i <= 10; i++) { // <--+
+                if (i % 2 == 1) { //              ^
                     System.out.println("Woops - skipping odd number");
                     continue; // ----------------^
                 }
@@ -212,3 +212,4 @@ public class ControlStmtsLoopsLec {
         }
 
     }
+}
