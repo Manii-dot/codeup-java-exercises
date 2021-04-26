@@ -31,5 +31,19 @@ public class ControlFlowExercises {
             c = c*c;
             System.out.println("Square of c is "+c);
         }while(c<65536);
+
+        //4b
+        for(int aa =0; aa<102; aa+=2){
+            System.out.println( "aa is "+aa);
+        }
+
+        for(int bb =105; bb>-10; bb-=5){
+            System.out.println( "bb is "+bb);
+        }
+
+        for(long cc =2; cc<1000000; cc*=cc){
+            System.out.println( "cc is "+cc);
+        }
+
     }
 }
