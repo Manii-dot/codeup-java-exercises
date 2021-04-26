@@ -63,12 +63,12 @@ public class ControlFlowExercises {
         Scanner sc = new Scanner(System.in);
         System.out.println("What number would you like to go up to?");
         int integer = sc.nextInt();
-        System.out.printf("Here is your table!\n\n");
+        System.out.printf("Here is your table!\nnumber square  cube \n");
         for(long y =1; y<= integer; y++){
             long y2 = y*y;
             long y3 = y*y*y;
 
-            System.out.printf("%d |  %d  |  %d\n", y, y2, y3);
+            System.out.printf("%-5d |  %-2d  |  %-2d\n", y, y2, y3);
         }
 
 
