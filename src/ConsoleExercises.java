@@ -27,7 +27,15 @@ public class ConsoleExercises {
         sc.nextLine();
         System.out.println("Tell me something cool");
         String somethingCool = sc.nextLine();
-        System.out.printf("Wow, \"%s\" is cool", somethingCool);
+        System.out.printf("Wow, \"%s\" is cool\n", somethingCool);
         // when trying to do it with the next method, only the first item is entered.
+
+        //Calculate the perimeter and area of Codeup's classrooms.
+        //1
+        System.out.println("Give me the width and length of your current space");
+        int width = sc.nextInt();
+        int length = sc.nextInt();
+        System.out.printf("You have entered %d for width, and %d for the length\n", width, length);
+
     }
 }
