@@ -12,10 +12,15 @@ public class ConsoleExercises {
         Scanner sc = new Scanner(System.in);
         System.out.println("What number do you want to enter here?");
         int number = sc.nextInt();
-        System.out.printf("You had enter %d", number);
+        System.out.printf("You had enter %d\n", number);
         //If the user input a string there is an error that happen.
 
-
-
+        //2
+        System.out.println("What are your three favorite fruits?");
+        String fruit1 = sc.next();
+        String fruit2 = sc.next();
+        String fruit3 = sc.next();
+        System.out.printf("Your three favorite fruits are %s, %s, and %s,\n", fruit1, fruit2, fruit3);
+// it will not display anything if you try to enter less than three items, and also if more than three items are entered only the first three items will displayed.
     }
 }
