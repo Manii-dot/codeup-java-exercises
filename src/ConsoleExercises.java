@@ -37,5 +37,7 @@ public class ConsoleExercises {
         int length = sc.nextInt();
         System.out.printf("You have entered %d for width, and %d for the length\n", width, length);
 
+        //2
+
     }
 }
