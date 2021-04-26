@@ -1,7 +1,7 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
-        //1 LOOP BASICS
+        // Section 1 LOOP BASICS
         //a) while
         int i = 5;
         while (i <= 15){
@@ -44,6 +44,21 @@ public class ControlFlowExercises {
         for(long cc =2; cc<1000000; cc*=cc){
             System.out.println( "cc is "+cc);
         }
+
+        // Section 2 Fizzbuzz
+        for (int x = 1; x <= 100; x++){
+
+        }
+
+
+
+
+
+
+
+
+
+
 
     }
 }
