@@ -22,5 +22,12 @@ public class ConsoleExercises {
         String fruit3 = sc.next();
         System.out.printf("Your three favorite fruits are %s, %s, and %s,\n", fruit1, fruit2, fruit3);
 // it will not display anything if you try to enter less than three items, and also if more than three items are entered only the first three items will displayed.
+
+        //3
+        sc.nextLine();
+        System.out.println("Tell me something cool");
+        String somethingCool = sc.nextLine();
+        System.out.printf("Wow, \"%s\" is cool", somethingCool);
+        // when trying to do it with the next method, only the first item is entered.
     }
 }
