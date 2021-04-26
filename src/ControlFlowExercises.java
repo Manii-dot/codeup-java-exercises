@@ -47,8 +47,17 @@ public class ControlFlowExercises {
 
         // Section 2 Fizzbuzz
         for (int x = 1; x <= 100; x++){
-
+    System.out.println(x);
+            if(((x%3)==0 && (x%5)==0))
+                System.out.println("fizzbuzz");
+            else if((x%3)==0)
+                System.out.println("fizz");
+            else if((x%5)==0)
+                System.out.println("buzz");
         }
+
+
+        //
 
 
 
