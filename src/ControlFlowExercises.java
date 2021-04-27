@@ -75,6 +75,26 @@ public class ControlFlowExercises {
         // Section 4 Convert given number grades into letter grades.
         System.out.println("Please enter your grade: ");
         int UserGrade = sc.nextInt();
+        do{
+            if(UserGrade <= 100 && UserGrade >= 88)
+            System.out.println("You earned an A!");
+            else if (UserGrade <= 87 && UserGrade >= 80)
+            System.out.println("You earned a B!");
+            else if (UserGrade <= 79 && UserGrade >= 67)
+                System.out.println("You earned a C!");
+            else if (UserGrade <= 66 && UserGrade >= 60)
+                System.out.println("You earned a D!");
+            else if (UserGrade <= 59 && UserGrade >= 0)
+                System.out.println("You earned an F!");
+            else
+                System.out.println("Do you have anymore grades to enter?");
+            String UserResponse = sc.nextLine();
+                if(UserResponse == "yes")
+                    continue;
+                else
+                    System.out.println("All done here!");
+
+        }while(UserGrade>=0);
 
 
 
