@@ -33,11 +33,18 @@ public class ConsoleExercises {
         //Calculate the perimeter and area of Codeup's classrooms.
         //1
         System.out.println("Give me the width and length of your current space");
-        int width = sc.nextInt();
-        int length = sc.nextInt();
-        System.out.printf("You have entered %d for width, and %d for the length\n", width, length);
+        int width = Integer.parseInt(sc.nextLine());
+        int length = Integer.parseInt(sc.nextLine());
+//        System.out.printf("You have entered %d for width, and %d for the length\n", width, length);
+        int area = length * width;
+        int parameter = (length*2)+(width*2);
 
-        //2
+        System.out.printf("The area of this rectangle is %d and its parameter is %d\n",area, parameter);
+
+
+
+        //Bonus
+
 
     }
 }

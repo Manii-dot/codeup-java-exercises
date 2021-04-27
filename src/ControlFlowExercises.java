@@ -72,6 +72,10 @@ public class ControlFlowExercises {
         }
 
 
+        // Section 4 Convert given number grades into letter grades.
+        System.out.println("Please enter your grade: ");
+        int UserGrade = sc.nextInt();
+
 
 
 
