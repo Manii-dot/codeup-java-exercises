@@ -9,6 +9,7 @@ public static void main(String[] args){
     System.out.println(Modulus(0,2));
     System.out.println(LoopMultiplication(5,2));
     System.out.println(getInteger(1,10));
+    System.out.println(Factorial());
     }
 
 // 1 Basic Arithmetic
@@ -57,12 +58,25 @@ public static void main(String[] args){
         System.out.println("Please enter a number");
         int userInput = scanner.nextInt();
         if (userInput > min && userInput < max) {
-            System.out.printf("Congrats, your input of %d was within our min and max!", userInput);
+            System.out.printf("Congrats, your input of %d was within our min and max!\n", userInput);
         }else System.out.print("Please try again it cant be ");
         return userInput;
     }
 
     //Section 3
     //Calculate the factorial of a number.
+    public static int Factorial (){
+    Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a number between 1 and 10");
+        long factor = 1;
+        int userInput = scanner.nextInt();
+        for(int i = 1; i <= getInteger(1,10); i++){
+            factor *= i;
+        }
+
+        System.out.printf("!%d = %d", getInteger(1,10), factor);
+        return userInput;
+
+}
 
 }
