@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
 public static void main(String[] args){
     System.out.println(Addition(2,2));
@@ -6,7 +8,7 @@ public static void main(String[] args){
     System.out.println(Division(2,2));
     System.out.println(Modulus(0,2));
     System.out.println(LoopMultiplication(5,2));
-
+    System.out.println(getInteger(1,10));
     }
 
 // 1 Basic Arithmetic
@@ -46,9 +48,21 @@ public static void main(String[] args){
         return result;
     }
 
+    // Section 2
+    //Create a method that validates that user input is in a certain range
 
+    //
+    public static int getInteger(int min, int max){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a number");
+        int userInput = scanner.nextInt();
+        if (userInput > min && userInput < max) {
+            System.out.printf("Congrats, your input of %d was within our min and max!", userInput);
+        }else System.out.print("Please try again it cant be ");
+        return userInput;
+    }
 
-
-
+    //Section 3
+    //Calculate the factorial of a number.
 
 }
