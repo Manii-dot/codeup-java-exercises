@@ -10,6 +10,7 @@ public static void main(String[] args){
     System.out.println(LoopMultiplication(5,2));
     System.out.println(getInteger(1,10));
     System.out.println(Factorial());
+    System.out.println(DiceRolling());
     }
 
 // 1 Basic Arithmetic
@@ -54,6 +55,7 @@ public static void main(String[] args){
 
     //
     public static int getInteger(int min, int max){
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a number");
         int userInput = scanner.nextInt();
@@ -82,16 +84,31 @@ public static void main(String[] args){
     //Section 4
     //Create an application that simulates dice rolling.
     //
-    public static void DiceRolling(){
+    public static boolean DiceRolling(){
+    boolean rollAgain;
+    do{
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Please roll the dices");
+    System.out.println("Please roll the dices by entering a number between 1 to 12");
     int userRollDice = scanner.nextInt();
+    int rolledDice = (int)(Math.random()*(userRollDice*2))+2;
+    if (rolledDice>(userRollDice*2)/2){
+        System.out.println("Good job! Your roll is "+rolledDice);
+    }else{
+        System.out.println("Ow man! Your roll is "+rolledDice);}
 
-
-
-
-
+    scanner.nextLine();
+    System.out.println("Do you want to roll again?");
+    String UserResponse = scanner.nextLine();
+    if(UserResponse.equalsIgnoreCase("yes")){
+        rollAgain = true;
+    }else {
+        System.out.println("Thanks for playing!");
+        rollAgain = false;
     }
+
+    }while (rollAgain);
+return rollAgain;
+}
 
 
 
