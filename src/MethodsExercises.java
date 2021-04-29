@@ -80,7 +80,18 @@ public static void main(String[] args){
 
 
     //Section 4
+    //Create an application that simulates dice rolling.
     //
+    public static void DiceRolling(){
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Please roll the dices");
+    int userRollDice = scanner.nextInt();
+
+
+
+
+
+    }
 
 
 

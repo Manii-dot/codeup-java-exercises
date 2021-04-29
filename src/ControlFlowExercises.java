@@ -3,6 +3,12 @@ import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
+        int x1 = 5;
+        System.out.println(x1 > 2 ? x1 < 4 ? 10 : 8 : 7);
+
+        int x2 = 5 * 4 % 3;
+        System.out.println(x2);
+
         // Section 1 LOOP BASICS
         //a) while
         int i = 5;
@@ -73,37 +79,31 @@ public class ControlFlowExercises {
 
 
         // Section 4 Convert given number grades into letter grades.
+        boolean moreGrade;
+        do {
         System.out.println("Please enter your grade: ");
         int UserGrade = sc.nextInt();
-        do{
-            if(UserGrade <= 100 && UserGrade >= 88)
-            System.out.println("You earned an A!");
-            else if (UserGrade <= 87 && UserGrade >= 80)
-            System.out.println("You earned a B!");
-            else if (UserGrade <= 79 && UserGrade >= 67)
+
+            if (UserGrade <= 100 && UserGrade >= 88) {
+                System.out.println("You earned an A!");
+            } else if (UserGrade <= 87 && UserGrade >= 80) {
+                System.out.println("You earned a B!");
+            } else if (UserGrade <= 79 && UserGrade >= 67) {
                 System.out.println("You earned a C!");
-            else if (UserGrade <= 66 && UserGrade >= 60)
+            } else if (UserGrade <= 66 && UserGrade >= 60) {
                 System.out.println("You earned a D!");
-            else if (UserGrade <= 59 && UserGrade >= 0)
+            } else if (UserGrade <= 59 && UserGrade >= 0) {
                 System.out.println("You earned an F!");
-            else
-                System.out.println("Do you have anymore grades to enter?");
+            }
+            sc.nextLine();
+            System.out.println("Do you have anymore grades to enter?");
             String UserResponse = sc.nextLine();
-                if(UserResponse == "yes")
-                    continue;
+                if(UserResponse.equalsIgnoreCase("yes")){
+                   moreGrade = true ;}
                 else
-                    System.out.println("All done here!");
+                {System.out.println("All done here!");
+                moreGrade = false;}
 
-        }while(UserGrade>=0);
-
-
-
-
-
-
-
-
-
-
+        }while(moreGrade);
     }
 }
