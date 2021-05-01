@@ -13,6 +13,7 @@ public class Person {
 //        System.out.println(rick.sayHello());
 //        // prints "Hello from Rick Sanchez!"
 //    }
+private String name;
 
     public String getName(){
 //TODO: return the person's name
