@@ -11,9 +11,10 @@ public class Person {
             return name;
         }
 
-        public void setName (String name){
+        public String setName (String name){
 //TODO: change the name property to the passed value
             this.name = name;
+            return name;
         }
         public void sayHello () {
 //TODO: print a message to the console using the person's name
