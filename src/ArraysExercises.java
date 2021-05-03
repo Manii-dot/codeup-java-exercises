@@ -7,10 +7,25 @@ public class ArraysExercises {
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(numbers));
 
-        int[] person;
-        person = new int[3];
+        String[] Person;
+        Person = new String[3];
+
+        Person[0] = "Manny";
+        Person[1] = "Laura";
+        Person[2] = "Adrielle";
+
+        System.out.println("Arrays.toString(Person) = " + Arrays.toString(Person));
+
+        System.out.println();
+
+        for(String family: Person){
+            System.out.println(family+" is part of the JoSteph family");
 
 
 
+        }
     }
+
+
+
 }
