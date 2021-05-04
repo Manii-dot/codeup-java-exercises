@@ -20,12 +20,11 @@ public class ArraysExercises {
 
         for(String family: Person){
             System.out.println(family+" is part of the JoSteph family");
-
-
-
         }
     }
 
+public static addPerson(){
 
+}
 
 }
