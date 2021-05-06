@@ -48,6 +48,7 @@ public class Chess {
 
         Scanner sc = new Scanner(System.in);
 
+        return true;
 
     }
 
