@@ -9,12 +9,12 @@ public class Rectangle extends Quadrilateral{
 
     @Override
     public double getPerimeter() {
-        return 0;
+        return (2* length)+(2*width);
     }
 
     @Override
     public double getArea() {
-        return 0;
+        return length * width;
     }
 //    protected int length;
 //    protected int width;
@@ -31,6 +31,11 @@ public class Rectangle extends Quadrilateral{
 //    public int getPerimeter(){
 //        return (2* length)+(2*width);
 //    }
+
+    public void setDimension(double length, double width){
+        this.length = length;
+        this.width = width;
+    }
 
 
 
