@@ -24,3 +24,9 @@ public class ShapesTest {
         System.out.println("box1 = " + box2.getPerimeter());
     }
 }
+
+//9 Why does the code fail to compile if you leave off the getPerimeter method in Rectangle?
+// Because it does not know which action to do.
+
+//10 What happens if you try to call the getLength or getWidth methods of the myShape variable? Why?
+//

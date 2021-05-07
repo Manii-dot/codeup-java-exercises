@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Input {
 
-    private Scanner scanner = new Scanner(System.in);
+    private Scanner sc = new Scanner(System.in);
 
     public String getString(){
-        return scanner.nextLine();
+        return "";
     }
 
     public boolean yesNo(){
@@ -20,18 +20,18 @@ public class Input {
 
 
     public int getInt(int min, int max){
-
+return 0;
     }
 
     public int getInt(){
-
+return 0;
     }
 
     public double getDouble(double min, double max){
-
+return 0;
     }
 
     public double getDouble(){
-
+return 0;
     }
 }
