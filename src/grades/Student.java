@@ -38,7 +38,6 @@ public class Student {
         Su.addGrade(90);
         Su.addGrade(100);
         System.out.println("Su.getGradeAverage() = " + Su.getGradeAverage());
-
     }
 
 
