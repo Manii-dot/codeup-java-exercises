@@ -4,13 +4,16 @@ import java.util.Scanner;
 
 public class Input {
 
-    private Scanner sc = new Scanner(System.in);
+    private Scanner scanner;
 
     public String getString(){
-        return "";
+        scanner = new Scanner(System.in);
+        return scanner.nextLine();
     }
 
     public boolean yesNo(){
+        scanner = new Scanner(System.in);
+        String userInput = scanner.next();
     if( getString().equals("y") || getString().equals("yes")){
         return true;
         }else {
@@ -20,18 +23,18 @@ public class Input {
 
 
     public int getInt(int min, int max){
-return 0;
+        System.out.println("enter a "+min+" number and a "+max+" number");
+        int userInput = scanner.nextInt();
+        if(userInput>min && userInput<max){
+
+        }
+        return 0;
     }
 
-    public int getInt(){
-return 0;
-    }
 
     public double getDouble(double min, double max){
 return 0;
     }
 
-    public double getDouble(){
-return 0;
-    }
+
 }
