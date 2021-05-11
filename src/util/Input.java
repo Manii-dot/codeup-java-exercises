@@ -33,6 +33,11 @@ public class Input {
 
 
     public double getDouble(double min, double max){
+        System.out.println("enter a "+min+" number and a "+max+" number");
+        double userInput = scanner.nextInt();
+        if(userInput>min && userInput<max){
+
+        }
 return 0;
     }
 
